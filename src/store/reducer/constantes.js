@@ -1,0 +1,5 @@
+export const GET_RANDOM_MOVIES = "GET_RANDOM_MOVIES";
+export const GET_MOVIE = "GET_MOVIE";
+export const ORDER_RATING = "ORDER_RATING";
+export const GET_MOVIE_DETAIL = "GET_MOVIE_DETAIL";
+export const CLEAR_DETAILS = "CLEAR_DETAILS";

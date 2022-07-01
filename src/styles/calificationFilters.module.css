@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  width: 500px;
+}
+
+.container::before {
+  content: "Filter by calification";
+  margin-right: 12px;
+  font-size: 30px;
+  color: rgb(214, 214, 214);
+}
+
+.inputRating {
+  display: none;
+}
+
+.star {
+  cursor: pointer;
+  margin-top: 2px;
+}

@@ -1,0 +1,15 @@
+.btnTopContainer {
+  position: relative;
+}
+
+.btnTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  color: #000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}

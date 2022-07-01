@@ -1,0 +1,107 @@
+.container {
+  height: 100%;
+  background-color: rgba(228, 228, 228, 0.575);
+  padding-bottom: 50px;
+}
+
+.navBar {
+  background-image: url("../../Assets/TheGodfather.jpg");
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 40px 40px 40px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.navBarContainer {
+  background-color: rgba(238, 237, 226, 0.3);
+  backdrop-filter: blur(5px);
+  width: 40%;
+  border-radius: 10px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.navBarTitle {
+  padding-bottom: 40px;
+  color: #fff;
+  font-size: 40px;
+}
+
+.movieContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 80%;
+  opacity: 0.95;
+  background-color: #fff;
+  padding-bottom: 30px;
+  border-radius: 5px;
+}
+
+.movies {
+  padding: 20px;
+  display: flex;
+  margin: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+}
+
+.movieTitle {
+  font-size: 25px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.movieImg {
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.movieImg:hover {
+  transform: scale(1.005);
+  filter: drop-shadow(5px 5px 4px #00000081);
+}
+
+.movieData {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+
+.calificationMovie {
+  font-size: 20px;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  border: 0.5px solid rgba(0, 0, 0, 0.212);
+}
+
+.star {
+  padding-right: 5px;
+}
+
+.movieRelease {
+  font-size: 20px;
+  width: 150px;
+  text-align: center;
+  border-radius: 5px;
+  border: 0.5px solid rgba(0, 0, 0, 0.212);
+}
+
+.calendar {
+  padding-right: 8px;
+}
