@@ -51,15 +51,21 @@ const Detail = () => {
               })}
             </div>
 
+            <hr color="#292929" />
+
             <div>
               <h3>Language</h3>
               <p>{movie.original_language}</p>
             </div>
 
-            <div>
+            <hr color="#292929" />
+
+            <div className={style.popularity}>
               <h3>Popularity</h3>
               <p>{movie.popularity}</p>
             </div>
+
+            <hr color="#292929" />
 
             <div>
               <h3>Producing companies</h3>
@@ -68,10 +74,14 @@ const Detail = () => {
               })}
             </div>
 
+            <hr color="#292929" />
+
             <div>
               <h3>Release date</h3>
               <p>{movie.release_date}</p>
             </div>
+
+            <hr color="#292929" />
 
             <div>
               <h3>Calification</h3>
@@ -84,6 +94,17 @@ const Detail = () => {
                 </div>
               </p>
             </div>
+            <hr color="#292929" />
+          </div>
+          <div className={style.homepageContainer}>
+            <a
+              href={movie.homepage}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={style.homepage}
+            >
+              Official website
+            </a>
           </div>
         </div>
       </div>

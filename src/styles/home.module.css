@@ -20,6 +20,7 @@
   background-color: rgba(238, 237, 226, 0.3);
   backdrop-filter: blur(5px);
   width: 40%;
+  max-width: 600px;
   border-radius: 10px;
   height: 250px;
   display: flex;
@@ -59,12 +60,6 @@
   color: #000;
 }
 
-.movieTitle {
-  font-size: 25px;
-  font-weight: normal;
-  text-align: center;
-}
-
 .movieImg {
   border-radius: 10px;
   transition: all 0.2s ease;
@@ -73,6 +68,12 @@
 .movieImg:hover {
   transform: scale(1.005);
   filter: drop-shadow(5px 5px 4px #00000081);
+}
+
+.movieTitle {
+  font-size: 25px;
+  font-weight: normal;
+  text-align: center;
 }
 
 .movieData {
@@ -104,4 +105,35 @@
 
 .calendar {
   padding-right: 8px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1420px) {
+  .navBar {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .navBarContainer {
+    height: 200px;
+    width: 80%;
+  }
+
+  .navBarTitle {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+  .movieContainer {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .mvies {
+    padding: 0;
+    margin: 0;
+  }
+
+  .movieImg {
+    width: 100%;
+  }
 }

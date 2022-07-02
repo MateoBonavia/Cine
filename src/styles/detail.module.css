@@ -1,6 +1,5 @@
 .generalContainer {
   height: 100vh;
-  /* background-color: rgba(228, 228, 228, 0.575); */
   background-image: url("../../Assets/background-detail.jpg");
   background-size: contain;
   display: flex;
@@ -30,6 +29,9 @@
 
 .bannerImg {
   border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .info {
@@ -41,6 +43,7 @@
 
 .title {
   font-size: 45px;
+  text-align: center;
 }
 
 .overview {
@@ -56,12 +59,15 @@
   margin-bottom: 5px;
 }
 
+.overview > p {
+  text-align: justify;
+}
+
 .generalInfo {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   margin-top: 100px;
-  flex-wrap: wrap;
   font-size: 20px;
 }
 
@@ -71,6 +77,10 @@
 
 .generalInfo > div > p {
   margin-bottom: 5px;
+}
+
+.generalInfo > hr {
+  display: none;
 }
 
 .calification {
@@ -85,4 +95,106 @@
 .numberCalification {
   font-size: 25px;
   margin-top: -4px;
+}
+
+.homepageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 100px;
+  font-size: 25px;
+}
+
+.homepage {
+  color: #000;
+  transition: all 0.15s ease;
+}
+
+.homepage:hover {
+  transform: scale(1.02);
+}
+
+@media screen and (min-width: 480px) and (max-width: 1201px) {
+  .generalContainer {
+    width: 100vw;
+    height: 90%;
+  }
+
+  .container {
+    height: 80%;
+    margin: 30px 15px;
+  }
+
+  .imgContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .principalInfo {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .bannerImg {
+    width: 100%;
+  }
+
+  .title {
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .overview {
+    padding: 0;
+  }
+
+  .overview > h3 {
+    font-size: 20px;
+  }
+
+  .overview > p {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .generalInfo {
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .generalInfo > div {
+    display: flex;
+  }
+
+  .generalInfo > div > h3 {
+    margin-right: 50px;
+    width: 100px;
+  }
+
+  .generalInfo > hr {
+    display: block;
+    width: 100%;
+    height: 10%;
+    margin-bottom: 5px;
+  }
+
+  .numberCalification {
+    font-size: 20px;
+    padding-top: 3px;
+  }
+
+  .homepageContainer {
+    margin-top: 40px;
+    font-size: 20px;
+  }
 }

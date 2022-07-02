@@ -21,3 +21,13 @@
   cursor: pointer;
   margin-top: 2px;
 }
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 400px;
+  }
+
+  .container::before {
+    font-size: 20px;
+  }
+}
