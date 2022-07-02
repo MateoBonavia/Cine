@@ -67,9 +67,11 @@
 
   .search {
     height: 25px;
+    margin-bottom: 8px;
   }
 
   .reset {
     height: 25px;
+    margin-bottom: 8px;
   }
 }

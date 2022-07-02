@@ -107,7 +107,31 @@
   padding-right: 8px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1420px) {
+@media screen and (max-width: 650px) {
+  .container {
+    min-width: 540px;
+  }
+
+  .navBar {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .navBarContainer {
+    min-width: 510px;
+  }
+
+  .navBarTitle {
+    font-size: 25px;
+  }
+
+  .movieContainer {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 1420px) {
   .navBar {
     margin: 0;
     border-radius: 0;
@@ -126,11 +150,6 @@
   .movieContainer {
     width: 100%;
     border-radius: 0;
-  }
-
-  .mvies {
-    padding: 0;
-    margin: 0;
   }
 
   .movieImg {
